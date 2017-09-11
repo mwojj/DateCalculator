@@ -35,6 +35,11 @@ public class DateCalculation
         daySub = 30+daySub;
     }
 
+    if (tomonth<month){
+        monthSub = 12+monthSub;
+        yearSub = yearSub-1;
+    }
+
    // godziny = yearSub*365*30*24 + monthSub*30*24 + daySub*24;
   //  minuty = yearSub*365*30*24*60 + monthSub*30*24*60 + daySub*24*60;
    // sekundy = yearSub*365*30*24*60*60 + monthSub*30*24*60*60 + daySub*24*60*60;
