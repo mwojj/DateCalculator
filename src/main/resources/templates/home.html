@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Calculator</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="content">
+    <div id="center">
+        <h3><font color=#f0f8ff th:height="24">Oblicz czas, który Ci upłynął</font></h3>
+        <h2><font color="white" th:height="50">Podaj datę urodzenia:</font> </h2>
+<form action="/calculate" th:method="post">
+    <input type="text" name="day" placeholder="Dzień urodzenia" align="center"><br><br>
+    <input type="text" name="month" placeholder="Miesiąc urodzenia"><br><br>
+    <input type="text" name="year" placeholder="Rok urodzenia"><br><br>
+    <input id="button" type="submit" value="Oblicz czas"><br><br>
+
+</form>
+    </div>
+</div>
+</body>
+</html>
