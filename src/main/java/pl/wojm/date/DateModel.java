@@ -52,7 +52,7 @@ return year;
         DateCalculation dc = new DateCalculation();
         Calendar cal = Calendar.getInstance();
         dc.calculate(day, month, year);
-        String dateCalcResult = String.format("Przeżyłeś/aś do dnia dzisiejszego: %d lat %d miesięcy %d dni"  dc.yearSub, dc.monthSub, dc.daySub);
+        String dateCalcResult = String.format("Przeżyłeś/aś do dnia dzisiejszego: %d lat %d miesięcy %d dni",  dc.yearSub, dc.monthSub, dc.daySub);
 
         return dateCalcResult;
     }
